@@ -1,23 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:ital,wght@0,300;1,300&family=Mukta:wght@300&family=Raleway:ital,wght@0,200;0,300;0,400;1,300&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 nav {
   height: 80vh;
   width: 100%;
   background: url(../image/bg_img.jpg);
+  z-index: -254;
   background-repeat: no-repeat;
   background-size: 100%;
+  color: whitesmoke;
   /* background-size: cover; */
 }
 
 header {
   height: 80px;
   width: 100%;
-  background: rgba(234, 234, 239, 0.62);
+  background: rgba(36, 36, 72, 0.62);
   display: flex;
   position: fixed;
+  z-index: 254;
 }
 
 nav header img {
@@ -46,6 +51,7 @@ nav header div ul li a {
   font-size: 20px;
   color: white;
   border: 2px solid white;
+  border-radius: 30px;
   text-decoration: none;
   padding: 15px 30px;
 }
@@ -56,6 +62,20 @@ nav header div ul li a:hover {
   border-color: black;
 }
 
+nav h1 {
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 400px;
+  z-index: 2345;
+}
+nav h3 {
+  color: white;
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  z-index: 2345;
+}
 .search {
   position: absolute;
   left: 25%;
@@ -73,12 +93,540 @@ nav header div ul li a:hover {
 
 /* section start here */
 
-section {
-  height: 200vh;
+#images {
+  min-height: 200vh;
   width: 100%;
-
+  margin: 0;
   padding: 34px;
   justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: -535;
+}
+
+#images div {
+  width: 300px;
+  height: 200px;
+  background: radial-gradient(#111 50%, #000 100%);
+  overflow: hidden;
+  position: relative;
+}
+/* cat1 */
+#images div .cat {
+  max-width: 100%;
+
+  display: block;
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+#images div:hover .cat {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+#images div button {
+  height: 34px;
+  width: 60px;
+  background: red;
+  border-radius: 50px;
+  border-style: none;
+  color: white;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  opacity: 0;
+}
+#images div:hover button {
+  opacity: 1;
+}
+/* cat2 */
+
+#images div .cat1 {
+  max-width: 100%;
+
+  display: block;
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+#images div:hover .cat1 {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+#images div button {
+  height: 34px;
+  width: 60px;
+  background: red;
+  border-radius: 50px;
+  border-style: none;
+  color: white;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  opacity: 0;
+}
+#images div:hover button {
+  opacity: 1;
+}
+
+/* cat3 */
+#images div .cat2 {
+  max-width: 100%;
+
+  display: block;
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+#images div:hover .cat2 {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+
+/* cat4 */
+
+#images div .cat3 {
+  max-width: 100%;
+
+  display: block;
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+#images div:hover .cat3 {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+
+/* cat5 */
+#images div .cat4 {
+  max-width: 100%;
+
+  display: block;
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+#images div:hover .cat4 {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+
+/* cat6 */
+#images div .cat5 {
+  max-width: 100%;
+
+  display: block;
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+#images div:hover .cat5 {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+
+/* cat7 */
+#images div .cat6 {
+  max-width: 100%;
+
+  display: block;
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+#images div:hover .cat6 {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+
+/* cat8 */
+#images div .cat7 {
+  max-width: 100%;
+
+  display: block;
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+#images div:hover .cat7 {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+
+/* ABOUT section start here */
+.oc {
+  height: 100vh;
+  width: 100%;
+}
+.oc h1 {
+  font-size: 36px;
+  color: blue;
+  text-align: center;
+  margin-top: 34px;
+}
+.client {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+
+  justify-content: space-evenly;
+  padding-top: 34px;
+  text-decoration: none;
+}
+.client div {
+  /* border: 2px solid red; */
+  border-radius: 10%;
+  height: 60vh;
+  width: 20%;
+  position: relative;
+  padding: 20px;
+  background-color: rgb(247, 239, 239);
+  text-align: center;
+}
+.client div img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10%;
+}
+.n {
+  font-size: 20px;
+}
+
+.ab {
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+.ab1 {
+  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.about {
+  height: 60vh;
+  width: 100%;
+}
+.about h1 {
+  font-size: 36px;
+  color: rgb(18, 18, 32);
+  text-align: center;
+  margin-top: -80px;
+  margin-bottom: 34px;
+}
+.about p {
+  font-size: 20px;
+  color: rgb(18, 18, 31);
+  text-align: center;
+}
+
+.grant {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+}
+.grant .g1 {
+  position: absolute;
+  background: #7fbada;
+  height: 100%;
+  width: 50%;
+}
+.grant .g1 h2 {
+  font-size: 30px;
+  color: rgb(18, 18, 32);
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+.grant .g1 p {
+  font-size: 18px;
+  color: rgb(18, 18, 31);
+  text-align: center;
+  margin-left: 34px;
+  margin-right: 34px;
+}
+
+.grant .g2 {
+  position: absolute;
+
+  height: 100%;
+  width: 50%;
+  right: 0;
+}
+.grant .g2 img {
+  height: 100%;
+  width: 100%;
+}
+/* contact section start here */
+.ab2 {
+  text-align: center;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+.arrow {
+  height: 34px;
+  position: absolute;
+  z-index: 354;
+  bottom: 200px;
+  left: 50%;
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  form {
+    bottom: 200px;
+    left: 50%;
+  }
+  to {
+    bottom: 100px;
+    left: 50%;
+  }
+}
+.form {
+  height: 80vh;
+  width: 100%;
+  background-color: rgba(64, 144, 205, 0.866);
+  text-align: center;
+  position: relative;
+}
+
+.form h3 {
+  font-size: 30px;
+  position: absolute;
+  left: 530px;
+  margin-top: 34px;
+}
+
+.form div {
+  height: 150px;
+  width: 600px;
+
+  position: absolute;
+  top: 100px;
+  left: 25%;
+  display: flex;
+  font-size: 20px;
+}
+
+.form div form {
+  height: 150px;
+  width: 300px;
+}
+.form div form input {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form div textarea {
+  height: 95%;
+  width: 49%;
+  position: absolute;
+  right: 0px;
+  margin-top: 3px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form .btn {
+  height: 34px;
+  width: 200px;
+  position: absolute;
+  bottom: 80px;
+  left: 45%;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(250, 248, 248);
+  background: #000;
+}
+
+.acc {
+  height: 34px;
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+  cursor: pointer;
+}
+.acc1 {
+  height: 34px;
+  position: absolute;
+  bottom: 10px;
+  left: 55%;
+  cursor: pointer;
+}
+.acc2 {
+  height: 34px;
+  position: absolute;
+  bottom: 10px;
+  left: 60%;
+  cursor: pointer;
+}
+/* map start here */
+
+.map {
+  height: 80vh;
+  width: 100%;
+}
+.map m {
+  width: 100%;
+}
+
+/* signin page css start here */
+
+.ss {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(52, 142, 142, 0.785);
+  position: relative;
+}
+.ss h1 {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 34px;
+}
+
+.ss .frm {
+  height: 75%;
+  width: 75%;
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  display: flex;
+}
+
+.ss .frm .signup {
+  height: 100%;
+  width: 65%;
+  background: white;
+}
+
+.ss .frm .signup .connect {
+  height: 20%;
+  width: 100%;
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+.ss .frm .signup .connect .img1 {
+  height: 40px;
+  /* margin-top: 30px; */
+  position: absolute;
+  top: 30px;
+  left: 30%;
+}
+.ss .frm .signup .connect .img2 {
+  height: 40px;
+  /* margin-top: 30px; */
+  position: absolute;
+  top: 30px;
+  left: 50%;
+}
+
+.ss .frm .signup form {
+  height: 80%;
+  width: 100%;
+  /* border: 2px solid rgb(11, 62, 104); */
+  padding: 34px;
+}
+.ss .frm .signup form input {
+  width: 100%;
+  height: 15%;
+  margin-bottom: 20px;
+  text-align: center;
+  /* padding: 20px; */
+}
+.ss .frm .signup form .c {
+  background: url(../image/c-icon.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+.ss .frm .signup form .m {
+  background: url(../image/e.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.ss .frm .signup form .p {
+  background: url(../image/p.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.ss .frm .signup form .rp {
+  background: url(../image/p.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.ss .frm .signup form button {
+  width: 100%;
+  height: 15%;
+  margin-bottom: 20px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+}
+
+/* login page css start here */
+
+.log {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(11, 64, 134);
+}
+
+.log input {
+  width: 80%;
+  height: 10%;
+  /* margin-bottom: 20px; */
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.log .one {
+  display: flex;
+}
+.log .one p {
+  color: white;
+
+  margin-left: -130px;
+  margin-top: 14px;
+}
+.log .m {
+  background: url(../image/e.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  color: white;
+}
+.log .p {
+  background: url(../image/download.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  color: white;
+}
+.log .two {
+  display: flex;
+}
+.log .two p {
+  color: white;
+  margin: 40px;
+  cursor: pointer;
+}
+.log .two button {
+  height: 50px;
+  width: 100px;
+  background-color: red;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 /* footer start here */
