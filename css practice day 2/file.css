@@ -5,16 +5,37 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+#loading {
+  background: rgb(0, 0, 0) url(../image/load.gif) no-repeat center;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 78556;
+}
 nav {
   height: 80vh;
+  position: relative;
   width: 100%;
-  background: url(../image/bg_img.jpg);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background: url(../image/bg_img.jpg); */
+  /* z-index: -254; */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100%; */
+  /* color: whitesmoke; */
+  /* background-size: cover; */
+}
+/* 
+nav #bg-slider {
+  height: 80vh;
+  width: 100%;
   z-index: -254;
   background-repeat: no-repeat;
   background-size: 100%;
   color: whitesmoke;
-  /* background-size: cover; */
-}
+  position: absolute;
+} */
 
 header {
   height: 80px;
@@ -22,13 +43,13 @@ header {
   background: rgba(36, 36, 72, 0.62);
   display: flex;
   position: fixed;
-  z-index: 254;
+  z-index: 754;
 }
 
 nav header img {
-  height: 120px;
+  height: 90px;
   margin-left: 34px;
-  margin-top: -25px;
+  margin-top: -5px;
   cursor: pointer;
 }
 nav header div {
@@ -49,7 +70,8 @@ nav header div ul li {
 
 nav header div ul li a {
   font-size: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(83, 166, 180) 0%, rgb(2, 1, 41) 100%);
   border: 2px solid white;
   border-radius: 30px;
   text-decoration: none;
@@ -60,26 +82,27 @@ nav header div ul li a:hover {
   background-color: rgb(150, 124, 244);
   color: black;
   border-color: black;
+  background: linear-gradient(90deg, rgb(2, 1, 41) 0%, rgb(83, 166, 180) 100%);
 }
 
 nav h1 {
   color: white;
   position: absolute;
-  top: 150px;
+  top: 200px;
   left: 400px;
   z-index: 2345;
 }
 nav h3 {
   color: white;
   position: absolute;
-  top: 200px;
+  top: 250px;
   left: 250px;
   z-index: 2345;
 }
 .search {
   position: absolute;
   left: 25%;
-  bottom: 200px;
+  bottom: 100px;
   height: 50px;
   width: 600px;
   border-radius: 50px;
@@ -89,6 +112,25 @@ nav h3 {
   background-color: aliceblue;
   text-align: center;
   font-size: 20px;
+}
+nav .arr1 {
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 45868;
+}
+nav .arr1:hover {
+  left: 8px;
+}
+nav .arr2 {
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+nav .arr2:hover {
+  right: 8px;
 }
 
 /* section start here */
@@ -105,7 +147,7 @@ nav h3 {
   z-index: -535;
 }
 
-#images div {
+#images a div {
   width: 300px;
   height: 200px;
   background: radial-gradient(#111 50%, #000 100%);
@@ -113,18 +155,18 @@ nav h3 {
   position: relative;
 }
 /* cat1 */
-#images div .cat {
+#images a div .cat {
   max-width: 100%;
 
   display: block;
   transform: scale(1.3);
   transition: all 0.3s ease-out;
 }
-#images div:hover .cat {
+#images a div:hover .cat {
   transform: scale(1.1) translateY(-20px);
   opacity: 0.3;
 }
-#images div button {
+#images a div button {
   height: 34px;
   width: 60px;
   background: red;
@@ -137,114 +179,98 @@ nav h3 {
   cursor: pointer;
   opacity: 0;
 }
-#images div:hover button {
+#images a div:hover button {
   opacity: 1;
 }
 /* cat2 */
 
-#images div .cat1 {
+#images a div .cat1 {
   max-width: 100%;
 
   display: block;
   transform: scale(1.3);
   transition: all 0.3s ease-out;
 }
-#images div:hover .cat1 {
+#images a div:hover .cat1 {
   transform: scale(1.1) translateY(-20px);
   opacity: 0.3;
 }
-#images div button {
-  height: 34px;
-  width: 60px;
-  background: red;
-  border-radius: 50px;
-  border-style: none;
-  color: white;
-  position: absolute;
-  right: 5px;
-  top: 5px;
-  cursor: pointer;
-  opacity: 0;
-}
-#images div:hover button {
-  opacity: 1;
-}
 
 /* cat3 */
-#images div .cat2 {
+#images a div .cat2 {
   max-width: 100%;
 
   display: block;
   transform: scale(1.3);
   transition: all 0.3s ease-out;
 }
-#images div:hover .cat2 {
+#images a div:hover .cat2 {
   transform: scale(1.1) translateY(-20px);
   opacity: 0.3;
 }
 
 /* cat4 */
 
-#images div .cat3 {
+#images a div .cat3 {
   max-width: 100%;
 
   display: block;
   transform: scale(1.3);
   transition: all 0.3s ease-out;
 }
-#images div:hover .cat3 {
+#images a div:hover .cat3 {
   transform: scale(1.1) translateY(-20px);
   opacity: 0.3;
 }
 
 /* cat5 */
-#images div .cat4 {
+#images a div .cat4 {
   max-width: 100%;
 
   display: block;
   transform: scale(1.3);
   transition: all 0.3s ease-out;
 }
-#images div:hover .cat4 {
+#images a div:hover .cat4 {
   transform: scale(1.1) translateY(-20px);
   opacity: 0.3;
 }
 
 /* cat6 */
-#images div .cat5 {
+#images a div .cat5 {
   max-width: 100%;
 
   display: block;
   transform: scale(1.3);
   transition: all 0.3s ease-out;
 }
-#images div:hover .cat5 {
+#images a div:hover .cat5 {
   transform: scale(1.1) translateY(-20px);
   opacity: 0.3;
 }
 
 /* cat7 */
-#images div .cat6 {
+#images a div .cat6 {
   max-width: 100%;
 
   display: block;
   transform: scale(1.3);
   transition: all 0.3s ease-out;
 }
-#images div:hover .cat6 {
+#images a div:hover .cat6 {
   transform: scale(1.1) translateY(-20px);
   opacity: 0.3;
 }
 
 /* cat8 */
-#images div .cat7 {
+#images a div .cat7 {
   max-width: 100%;
 
   display: block;
   transform: scale(1.3);
   transition: all 0.3s ease-out;
 }
-#images div:hover .cat7 {
+#images a div:hover .cat7 {
   transform: scale(1.1) translateY(-20px);
   opacity: 0.3;
 }
@@ -486,6 +512,7 @@ nav h3 {
   width: 100%;
   background-color: rgba(52, 142, 142, 0.785);
   position: relative;
+  margin-top: 110px;
 }
 .ss h1 {
   text-align: center;
@@ -494,19 +521,20 @@ nav h3 {
 }
 
 .ss .frm {
-  height: 75%;
-  width: 75%;
+  height: 80%;
+  width: 80%;
   /* border: 2px solid black; */
   position: absolute;
   top: 100px;
   left: 150px;
   display: flex;
+  background: url(../image/contact-bg.jpg);
+  justify-content: center;
 }
 
 .ss .frm .signup {
   height: 100%;
   width: 65%;
-  background: white;
 }
 
 .ss .frm .signup .connect {
@@ -537,11 +565,16 @@ nav h3 {
   /* border: 2px solid rgb(11, 62, 104); */
   padding: 34px;
 }
+.ss .frm .signup form b {
+  color: red;
+  font-size: 30px;
+}
 .ss .frm .signup form input {
   width: 100%;
   height: 15%;
   margin-bottom: 20px;
   text-align: center;
+  background-color: white;
   /* padding: 20px; */
 }
 .ss .frm .signup form .c {
