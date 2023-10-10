@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cat website</title>
 
+    <link rel="stylesheet" href="sign.css" />
     <link rel="stylesheet" href="file.css" />
   </head>
   <body>
-    <nav>
+    <!-- <div id="loading"></div> -->
+    <nav style="height: 100vh">
       <header>
         <img src="../image/logo.png" alt="" />
         <div id="head">
@@ -20,6 +22,59 @@
           </ul>
         </div>
       </header>
+
+      <div class="cont">
+        <div class="con">
+          <span></span>
+          <span></span>
+          <span></span>
+          <form id="signinform" action="">
+            <h2>LOGIN</h2>
+            <div class="input">
+              <input type="text" placeholder="Username" />
+
+              <input type="password" placeholder="password" />
+              <div class="check">
+                <a href="#">Forget password</a>
+                <a href="#" id="signup">Signup</a>
+              </div>
+              <input type="submit" value="Signin" name="" id="" />
+            </div>
+          </form>
+
+          <form id="signupform" action="">
+            <h2>REGISTRATION</h2>
+            <div class="input">
+              <input type="text" placeholder="Username" />
+              <input type="email" placeholder="mail" />
+
+              <input type="password" placeholder="password" />
+              <input type="password" placeholder="re password" />
+
+              <input type="submit" value="Register" name="" id="" />
+              <div class="check">
+                <a href="#">Allready have an account?</a>
+                <a href="#" id="signin">Login</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- <img name="slide" width="100%" height="600" class="box" />
+
+      <img
+        class="arr1"
+        onclick="right()"
+        src="../image/left-arrow.png"
+        alt=""
+      />
+      <img
+        class="arr2"
+        onclick="left()"
+        src="../image/arrow-right.png"
+        alt=""
+      />
       <h1 class="ab">Welcome To Cute Kitten Website..</h1>
       <p class="ab1">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />Ipsa
@@ -27,12 +82,13 @@
         alias nam,<br />
         non molestias assumenda perspiciatis sunt. Magnam temporibus odio
         numquam?
-      </p>
+      </p> -->
     </nav>
-
+    <!-- 
     <section class="ss">
       <h1>Login & Signup</h1>
       <div class="frm">
+        <div class="val"></div>
         <div class="signup">
           <div class="connect">
             <img
@@ -49,14 +105,45 @@
             />
           </div>
           <form action="">
-            <input type="text" placeholder="Full Name" class="c" />
-            <input type="mail" placeholder="Email" class="m" />
-            <input type="password" placeholder="Password" class="p" />
-            <input type="password" placeholder="Repassword" class="rp" />
+            <div>
+              <input
+                type="text"
+                placeholder="Full Name"
+                class="c"
+                style="background-color: white"
+              /><b><span>*error</span></b>
+            </div>
+
+            <div>
+              <input
+                type="mail"
+                placeholder="Email"
+                class="m"
+                style="background-color: white"
+              /><b><span>*error</span></b>
+            </div>
+
+            <div>
+              <input
+                type="password"
+                placeholder="Password"
+                class="p"
+                style="background-color: white"
+              /><b><span>*error</span></b>
+            </div>
+
+            <div>
+              <input
+                type="password"
+                placeholder="Repassword"
+                class="rp"
+                style="background-color: white"
+              /><b><span>*error</span></b>
+            </div>
             <button>SIGNUP</button>
           </form>
-        </div>
-        <div class="log">
+        </div> -->
+    <!-- <div class="log">
           <h1 style="color: white; margin-top: 34px">Login</h1>
           <input type="email" name="" id="" placeholder="Email" class="m" />
           <input
@@ -74,10 +161,23 @@
             <p>Forget Password?</p>
             <button>LOGIN</button>
           </div>
-        </div>
-      </div>
-    </section>
+        </div> -->
+    <!-- </div>
+    </section> -->
 
     <footer>TM & © 2023 Saroj Holder, LLC. All Rights Reserved.</footer>
   </body>
+  <script>
+    let signup = document.querySelector("#signup");
+    let signin = document.querySelector("#signin");
+    let nav = document.querySelector("nav");
+    signup.onclick = function () {
+      nav.classList.add("signup");
+    };
+
+    signin.onclick = function () {
+      nav.classList.remove("signin");
+    };
+  </script>
+  <script src="file.js"></script>
 </html>
